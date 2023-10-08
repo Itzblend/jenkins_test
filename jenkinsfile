@@ -27,5 +27,11 @@ pipeline {
                 echo 'Deploying client1....'
             }
         }
+        stage('Client2 changes') {
+            when {changeset "client2_scripts/**"}
+            steps {
+                echo 'Deploying client2....'
+            }
+        }
     }
 }

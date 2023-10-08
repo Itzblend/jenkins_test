@@ -1,1 +1,1 @@
-SELECT 'client1';
+SELECT 'client1 changed';
